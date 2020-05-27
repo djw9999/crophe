@@ -9,7 +9,6 @@ import {
   import { FormatResponse } from '@/app/middlewares/formatResponse';
 
   import { PermissionEntityService } from './service';
-  import { readDir } from '@/utils';
 
   const ADMIN = 'Admin';
   const USER = 'User';
@@ -33,14 +32,4 @@ import {
           return permissionList;
 
       }
-
-      @Get('/accessionIdList')
-      async getAccessionIdList(
-          @QueryParam('year') year: string,
-      ) {
-          readDir(`../Crophe/WebRoot/data/pictures/rice/${year}`)
-          return {
-
-          }
-      }
-  }
+ }
