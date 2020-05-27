@@ -11,4 +11,8 @@ export class PermissionEntityService {
     async getPermission(conditions: FindConditions<PermissionEntity>) {
         return this.PermissionEntityRepository.find(objectUtils.clean({ ...conditions }))
     }
+
+    async updatePermission(conditions: FindConditions<PermissionEntity>, values: Partial<PermissionEntity>) {
+        return this.PermissionEntityRepository.update(objectUtils.clean(conditions), objectUtils.clean(values));
+    }
 }
