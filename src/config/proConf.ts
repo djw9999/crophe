@@ -7,7 +7,7 @@ export const proConfig : IConfig = {
         host: "localhost",
         port: 3306,
         username: "root",
-        password: "654321",
+        password: "",
         database: "dnucleomeorg"
     }
 }
