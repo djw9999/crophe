@@ -20,7 +20,7 @@ async function startKoaServer() {
     });
     
         //../../Crophe/WebRoot
-    staticMiddleware(app,'../Crophe/WebRoot');
+    staticMiddleware(app,'../Crophe');
     templateMiddleware(app);
     app.use(sessionMiddleware(app));
 

@@ -8,7 +8,7 @@ import {
 
   import { FileService, TableColumnService, riceDataService } from './service'
   
-  const PICTURES_PATH = '../Crophe/WebRoot/data/pictures';
+  const PICTURES_PATH = '../Crophe/data/pictures';
 
   @Controller('/api/crophe')
   @UseBefore(FormatResponse)

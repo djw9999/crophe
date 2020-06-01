@@ -9,7 +9,7 @@ import {
   import { FileService } from '../rice/service'
 
   
-  const PICTURES_PATH = '../Crophe/WebRoot/data/pictures';
+  const PICTURES_PATH = '../Crophe/data/pictures';
 
   @Controller('/api/crophe')
   @UseBefore(FormatResponse)
