@@ -24,9 +24,9 @@ async function startKoaServer() {
     templateMiddleware(app);
     app.use(sessionMiddleware(app));
 
-    app.listen(config.port);
+    app.listen(config.port, config.hostname);
   
-    console.log(`starting listening: ${config.port}`);
+    console.log(`starting listening: ${config.hostname}:${config.port}`);
   }
   
   (async () => {
